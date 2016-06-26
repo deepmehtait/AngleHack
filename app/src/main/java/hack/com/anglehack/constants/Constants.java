@@ -14,5 +14,5 @@ public class Constants {
     public static final String BASE_URL = "http://ec2-54-85-202-76.compute-1.amazonaws.com:8080/api/v1/";
     public static final String NUTRITION = BASE_URL + "/getNutrition?foodItem=";
     public static final String PROVIDERS = BASE_URL + "/providers";
-    
+
 }

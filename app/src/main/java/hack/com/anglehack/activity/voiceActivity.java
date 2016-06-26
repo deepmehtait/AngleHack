@@ -21,6 +21,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import hack.com.anglehack.R;
+import hack.com.anglehack.utils.ApiManager;
 
 /**
  * Created by Deep on 25-Jun-16.
@@ -33,10 +34,13 @@ public class voiceActivity extends AppCompatActivity {
     private ListView mlvTextMatches;
     private Spinner msTextMatches;
     private Button mbtSpeak;
+    private ApiManager apiManager;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_voice);
+        apiManager = new ApiManager();
         metTextHint = (TextView) findViewById(R.id.etTextHint);
         mlvTextMatches = (ListView) findViewById(R.id.lvTextMatches);
         msTextMatches = (Spinner) findViewById(R.id.sNoOfMatches);
@@ -115,6 +119,7 @@ public class voiceActivity extends AppCompatActivity {
                         mlvTextMatches.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                             @Override
                             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                                apiManager.fetchNutrition(textMatchList.get(position));
                                 Toast.makeText(voiceActivity.this, textMatchList.get(position), Toast.LENGTH_SHORT).show();
                                 Intent i = new Intent(voiceActivity.this,scanCompleteActivity.class);
                                 startActivity(i);

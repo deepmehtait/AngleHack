@@ -186,13 +186,13 @@
         </LinearLayout>
 
 
-            <android.support.v7.widget.RecyclerView
-                android:id="@+id/meal_log"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginBottom="40dp">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/meal_log"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="40dp">
 
-            </android.support.v7.widget.RecyclerView>
+        </android.support.v7.widget.RecyclerView>
 
 
 
