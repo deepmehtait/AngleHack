@@ -48,7 +48,7 @@ import hack.com.anglehack.R;
 public class HomeActivity extends AppCompatActivity {
     private static final int CAMERA_REQUEST = 1888;
 
-    CircleImageView scan, voice;
+    CircleImageView scan, voice,dash;
     // Google Map
     private GoogleMap googleMap;
     private HashMap markersHashMap;
@@ -86,6 +86,14 @@ public class HomeActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(HomeActivity.this, voiceActivity.class);
+                startActivity(i);
+            }
+        });
+        dash=(CircleImageView)findViewById(R.id.dash);
+        dash.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i= new Intent(HomeActivity.this,DashActivity.class);
                 startActivity(i);
             }
         });
@@ -137,7 +145,7 @@ public class HomeActivity extends AppCompatActivity {
                     FileInputStream stream = new FileInputStream(filePath);
                     ObjectMetadata objectMetadata = new ObjectMetadata();
                     AmazonS3Client s3Client = new AmazonS3Client(new BasicAWSCredentials("AKIAI2JHWM7SN5KQGW4Q", "nwAjmhmgfk6luCHIU4WNijRdY9YJJlrMggpP4W6X"));
-                    PutObjectRequest request = new PutObjectRequest("angel-hacks/", timeNow + ".jpg", stream, objectMetadata);
+                    PutObjectRequest request = new PutObjectRequest("angel-hacks/images/", timeNow + ".jpg", stream, objectMetadata);
                     PutObjectResult response = s3Client.putObject(request);
                     Toast.makeText(HomeActivity.this, response.toString(), Toast.LENGTH_SHORT).show();
                     Log.d("response", response.toString());
