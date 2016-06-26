@@ -70,14 +70,13 @@
                     app:civ_border_width="2dp"
                     app:civ_border_color="#FF000000"/>
             </LinearLayout>
+            <fragment
+                android:layout_below="@+id/ll2"
+                android:id="@+id/mapFragment"
+                android:layout_width="fill_parent"
+                android:layout_height="250dp"
 
-
-
-
-
-
-
-
+                class="com.google.android.gms.maps.SupportMapFragment" />
 
         </RelativeLayout>
 
