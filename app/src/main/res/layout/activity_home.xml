@@ -69,7 +69,11 @@
                     android:src="@drawable/button2small"
                     app:civ_border_width="2dp"
                     app:civ_border_color="#FF000000"/>
+
+
             </LinearLayout>
+
+
 
 
 
@@ -81,6 +85,9 @@
 
         </RelativeLayout>
 
+
     </ScrollView>
+
+
 
 </LinearLayout>
