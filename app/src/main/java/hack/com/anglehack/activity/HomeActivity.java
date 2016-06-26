@@ -145,7 +145,7 @@ public class HomeActivity extends AppCompatActivity {
                     FileInputStream stream = new FileInputStream(filePath);
                     ObjectMetadata objectMetadata = new ObjectMetadata();
                     AmazonS3Client s3Client = new AmazonS3Client(new BasicAWSCredentials("AKIAI2JHWM7SN5KQGW4Q", "nwAjmhmgfk6luCHIU4WNijRdY9YJJlrMggpP4W6X"));
-                    PutObjectRequest request = new PutObjectRequest("angel-hacks/images/", timeNow + ".jpg", stream, objectMetadata);
+                    PutObjectRequest request = new PutObjectRequest("angel-hacks/images", timeNow + ".jpg", stream, objectMetadata);
                     PutObjectResult response = s3Client.putObject(request);
                     Toast.makeText(HomeActivity.this, response.toString(), Toast.LENGTH_SHORT).show();
                     Log.d("response", response.toString());
