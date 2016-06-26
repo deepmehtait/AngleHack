@@ -12,7 +12,9 @@ public class Constants {
 
     // API Endpoints
     public static final String BASE_URL = "http://ec2-54-85-202-76.compute-1.amazonaws.com:8080/api/v1/";
-    public static final String NUTRITION = BASE_URL + "/getNutrition?foodItem=";
-    public static final String PROVIDERS = BASE_URL + "/providers";
+    public static final String FETCH_STRIIV = BASE_URL + "getStriivKinesis";
+    public static final String NUTRITION = BASE_URL + "getNutrition?foodItem=";
+    public static final String DIET_HISTORY = BASE_URL + "getDietHistory";
+    public static final String PROVIDERS = BASE_URL + "providers";
 
 }

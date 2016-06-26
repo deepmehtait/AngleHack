@@ -83,15 +83,15 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="63%"
-                        android:id="@+id/minValue201"
+                        android:id="@+id/calories"
                         android:textColor="#ffffff"
-                        android:textSize="55dp"
-                        android:maxLength="3"/>
+                        android:textSize="35dp"
+                        android:maxLength="5"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Vitamin C"
+                        android:text="KCalories"
                         android:textColor="#ffffff" />
 
                 </LinearLayout>
@@ -117,10 +117,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="19g"
-                        android:id="@+id/minValue21"
+                        android:id="@+id/fat"
                         android:textColor="#ffffff"
-                        android:textSize="55dp"
-                        android:maxLength="3"/>
+                        android:textSize="35dp"
+                        android:maxLength="5"/>
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -159,15 +159,15 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="75"
-                            android:id="@+id/minValue301"
+                            android:id="@+id/overall"
                             android:textColor="#ffffff"
-                            android:textSize="55dp"
-                            android:maxLength="3"/>
+                            android:textSize="35dp"
+                            android:maxLength="5"/>
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Low"
+                            android:text="Overall Score"
                             android:textColor="#ffffff" />
 
                     </LinearLayout>
@@ -190,18 +190,19 @@
                         android:orientation="vertical">
 
                         <TextView
+
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="200"
-                            android:id="@+id/minValue321"
+                            android:id="@+id/serve_size"
                             android:textColor="#ffffff"
-                            android:textSize="55dp"
-                            android:maxLength="3"/>
+                            android:textSize="35dp"
+                            android:maxLength="5"/>
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Carbs"
+                            android:text="Serving Size Qty"
                             android:textColor="#ffffff" />
 
                     </LinearLayout>
@@ -223,7 +224,7 @@
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:text="Angelhacks Chips - 1 Serving"
                     android:layout_marginTop="20dp"
-                    android:id="@+id/textView2"
+                    android:id="@+id/brand_name"
                     android:textColor="@color/dark_gray"
                     android:layout_marginBottom="24dp"
 

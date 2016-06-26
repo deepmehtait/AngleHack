@@ -119,9 +119,10 @@ public class voiceActivity extends AppCompatActivity {
                         mlvTextMatches.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                             @Override
                             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                                apiManager.fetchNutrition(textMatchList.get(position));
+
                                 Toast.makeText(voiceActivity.this, textMatchList.get(position), Toast.LENGTH_SHORT).show();
                                 Intent i = new Intent(voiceActivity.this,scanCompleteActivity.class);
+                                i.putExtra("search_text", textMatchList.get(position));
                                 startActivity(i);
                             }
                         });

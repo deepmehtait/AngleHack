@@ -36,7 +36,9 @@ public class FeedListAdapter <T extends FeedItem> extends RecyclerView.Adapter<F
 
     @Override
     public void onBindViewHolder(FeedListAdapter.ViewHolder holder, int position) {
-        System.out.println(items.get(position));
+        String[] images = {"@drawable/beefbob.png", "@drawable/best_food", "@drawable/pizza", "@drawable/caesar_salad"};
+
+
         FeedItem item = items.get(position);
         String mealType = item.mealType;
         String monthName = item.monthName;
