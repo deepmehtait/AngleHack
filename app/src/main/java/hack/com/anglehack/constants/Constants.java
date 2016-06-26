@@ -10,4 +10,9 @@ public class Constants {
     public static final String MY_ACCESS_KEY_ID = "AKIAI2JHWM7SN5KQGW4Q";
     public static final String MY_SECRET_KEY = "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";
 
+    // API Endpoints
+    public static final String BASE_URL = "http://ec2-54-85-202-76.compute-1.amazonaws.com:8080/api/v1/";
+    public static final String NUTRITION = BASE_URL + "/getNutrition?foodItem=";
+    public static final String PROVIDERS = BASE_URL + "/providers";
+    
 }
